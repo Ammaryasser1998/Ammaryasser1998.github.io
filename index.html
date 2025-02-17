@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ammar Yasser | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel = "stylesheet" href = "style.css">
-    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Roboto:wght@300;400&family=Montserrat:wght@400;600&family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Header -->
     <header>
-        <h1>Ammar Yasser</h1>
-        <p>Financial Engineering | AI & ML Enthusiast | Developer</p>
         <nav>
             <ul>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -22,43 +22,65 @@
         </nav>
     </header>
 
-    <div class="container">
-        <section id="about" class="about">
-            <h2 class="section-title">About Me</h2>
-            <p>Hello! I am Ammar Yasser, a Financial Engineering graduate with a passion for data-driven solutions in risk management, credit modeling, and portfolio optimization. I am committed to delivering innovative approaches that align with market demands within Saudi Arabia.</p>
-        </section>
+    <!-- Home Section -->
+    <section id="home">
+        <h1 id="dynamic-title"></h1>
+        <p>Welcome to my portfolio! Explore my work and get to know me.</p>
+        <button id="learn-more-btn">Learn More</button>
+    </section>
 
-        <section id="skills" class="skills">
-            <h2 class="section-title">Skills</h2>
-            <ul>
-                <li>Financial Engineering and Risk Modeling</li>
-                <li>Credit Risk Models and Portfolio Optimization</li>
-                <li>Python, Machine Learning, and Data Science</li>
-                <li>Database Management (SQL)</li>
-                <li>Financial Modeling (Excel)</li>
-                <li>Web Development (HTML, CSS, JavaScript))</li>
-                <li>Natural Language Processing (NLP)</li>
-            </ul>
-        </section>
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <p class="about-description">I am Ammar Yasser, a financial engineering enthusiast with a focus on banking, economics, financial products development, quantitative finance, and risk management. I specialize in data science, machine-learning/deep-learning, and financial modeling, with a passion for creating innovative solutions in the financial sector.</p>
+            <div class="about-skills">
+                <h3>Skills & Expertise</h3>
+                <ul>
+                    <li>Financial Engineering & Risk Modeling</li>
+                    <li>Python for Data Science (scikit-learn, XGBoost, PyTorch)</li>
+                    <li>Database Management (SQL)</li>
+                    <li>Financial Modeling (Excel)</li>
+                    <li>Web Development (HTML, CSS, JavaScript)</li>
+                    <li>Natural Language Processing (spaCy)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-        <section id="projects" class="projects">
-            <h2 class="section-title">Projects</h2>
-            <ul>
-                <li><a href="https://github.com/Ammaryasser1998/risk_segment_kmeans/tree/main">Credit Risk Modeling with K-Means Clustering</a> - Analyzed loan defaults using clustering techniques to categorize risk levels.</li>
-                <li><a href="https://github.com/Ammaryasser1998/Portfolio-Optimization-Methods">Saudi Market Portfolio Optimization</a> - Developed an optimization model using Saudi stock data to maximize returns.</li>
-            </ul>
-        </section>
+    <!-- Skills Section -->
 
-        <section id="contact" class="contact">
-            <h2 class="section-title">Contact</h2>
-            <p>Feel free to get in touch for collaborations or opportunities!</p>
-            <p>Email: <a href="mailto:amyss1910@gmail.com">Ammar's Email</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/ammar-yasser-32928a205/">linkedin.com/in/ammaryasser</a></p>
-        </section>
+    <!-- Projects Section -->
+    <!-- Projects Section -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+        <div class="project-card" id="portfolio-opt">
+            <h3>Portfolio Optimization</h3>
+            <p>Optimized a portfolio using Saudi stock market data.</p>
+            <button class="project-btn">View Project</button>
+        </div>
+        <div class="project-card" id="credit-risk">
+            <h3>Segmented Credit Profiles</h3>
+            <p>Implemented a credit risk model using K-Means clustering to classify risk levels.</p>
+            <button class="project-btn">View Project</button>
+        </div>
     </div>
+</section>
 
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out via email or LinkedIn!</p>
+        <button id="contact-btn"><a href="mailto:amyss1910@gmail.com">Get in Touch</a></button>
+        <button id="linkedin-btn">View LinkedIn Profile</button>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Ammar Yasser. All rights reserved.</p>
+        <p>&copy; 2025 Ammar Yasser. All Rights Reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
