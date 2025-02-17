@@ -1,6 +1,6 @@
 // Typing effect for the title
 const titleElement = document.getElementById('dynamic-title');
-const titleLines = ["Ammar Yasser", "Financial Engineering | Data Science"];
+const titleLines = ["Ammar Elhamamy", "Financial Engineering | Data Science"];
 let lineIndex = 0;
 let charIndex = 0;
 
