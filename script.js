@@ -43,7 +43,7 @@ document.getElementById('credit-risk').querySelector('.project-btn').addEventLis
 
 
 // LinkedIn button functionality
-const linkedinURL = 'www.linkedin.com/in/ammar-yasser-32928a205';
+const linkedinURL = 'https://www.linkedin.com/in/ammar-yasser-32928a205/';
 
 document.getElementById('linkedin-btn').addEventListener('click', function() {
     window.open(linkedinURL, '_blank');
