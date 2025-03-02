@@ -4,6 +4,7 @@ const titleLines = ["Ammar Elhamamy", "Financial Engineering | Data Science"];
 let lineIndex = 0;
 let charIndex = 0;
 
+
 function typeEffect() {
     if (lineIndex < titleLines.length) {
         if (charIndex < titleLines[lineIndex].length) {
@@ -20,6 +21,48 @@ function typeEffect() {
 }
 
 typeEffect();
+
+//16 x 16 grid background with hovering effects
+
+document.addEventListener("DOMContentLoaded", () => {
+    const container = document.createElement("div");
+
+
+    if (!container) {
+        console.error("Error: .grid-container not found in the DOM!");
+        return;  // Stop execution if container doesn't exist
+    }
+
+    console.log("Grid container found, adding boxes...");
+
+    container.classList.add("grid-container");
+    document.body.appendChild(container);
+
+    const numRows = 50;
+    const numCols = 50;
+    const numSquares = numRows * numCols;
+
+    for (let i = 1; i <= numSquares; i++) {
+        const div = document.createElement("div");
+        div.classList.add("grid-cell");
+        container.appendChild(div);
+    }
+
+    console.log("Grid boxes added:", document.querySelectorAll('.grid-box'));
+
+    const gridCells = document.querySelectorAll(".grid-cell");
+    const colors = ["#1A2A6C", "#FFFFFF", "#000000"]; // Navy, White, Black
+
+    gridCells.forEach(cell => {
+        let colorIndex = 0;
+        cell.addEventListener("mouseenter", () => {
+            console.log("Hover detected on a cell!");
+            colorIndex = (colorIndex + 1) % colors.length;
+            cell.style.backgroundColor = colors[colorIndex];
+        });
+    });
+});
+
 
 // Smooth scrolling
 document.querySelectorAll('nav ul li a').forEach(anchor => {
@@ -55,3 +98,5 @@ if (learnMoreBtn) {
         document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
     });
 }
+
+console.log('JavaScript is Running.')
