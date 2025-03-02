@@ -6,6 +6,16 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
+main{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 50px;
+}
+
+
+
 /* Body */
 body {
     background-color: #121212;
@@ -13,10 +23,43 @@ body {
     text-align: center;
 }
 
+
+
+/* === Grid Background Styling === */
+.grid-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(50, 1fr);
+    grid-template-rows: repeat(50, 1fr);
+
+    z-index: -1; /* Moves the grid behind all content */
+}
+
+.grid-container > div {
+    width: 30px;
+    height: 30px;
+    background-color: #2ae0be; /* slate grey */
+    transition: background-color 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.grid-cell {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+
 /* Navigation */
 header {
-    background-color: #1e1e1e;
-    padding: 15px 0;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent */
+    position: relative;
+    z-index: 2; /* Ensures header is above the grid */
 }
 
 nav ul {
@@ -40,6 +83,8 @@ nav ul li a:hover {
 }
 
 /* Sections */
+
+
 
 #about {
     background-color: #f4f4f4;
@@ -198,7 +243,7 @@ h1, h2 {
 }
 
 button {
-    background-color: #00aaff;
+    background-color: #161717;
     color: #ffffff;
     border: none;
     padding: 10px 20px;
@@ -206,11 +251,12 @@ button {
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
-    transition: background 0.3s ease;
+    transition: background 0.4s ease;
 }
 
 button:hover {
-    background-color: #0088cc;
+    background-color: white;
+    color: black;
 }
 
 /* Project Cards */
@@ -227,6 +273,7 @@ button:hover {
 .project-card:hover {
     transform: scale(1.05);
 }
+
 
 /* Footer */
 footer {
