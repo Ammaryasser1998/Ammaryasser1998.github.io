@@ -25,32 +25,6 @@ body {
 
 
 
-/* === Grid Background Styling === */
-.grid-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(50, 1fr);
-    grid-template-rows: repeat(50, 1fr);
-
-    z-index: -1; /* Moves the grid behind all content */
-}
-
-.grid-container > div {
-    width: 30px;
-    height: 30px;
-    background-color: #0c0d0c; /* slate grey */
-    transition: background-color 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.grid-cell {
-    background-color: transparent;
-    transition: background-color 0.3s ease;
-}
 
 
 /* Navigation */
@@ -280,4 +254,8 @@ footer {
     background-color: #1e1e1e;
     padding: 10px 0;
     margin-top: 30px;
+}
+
+h1, p, button{
+    z-index: 2;
 }
