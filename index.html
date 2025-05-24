@@ -1,1 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ammar Elhamamy's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="fonts/introrustg-base2line-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/introheadr-base-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Roboto:wght@300;400&family=Montserrat:wght@400;600&family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
 
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1 id="dynamic-title"></h1>
+        <p>Hello! My name is Ammar Elhamamy. Welcome to my portfolio! Explore my work and get to know me.</p>
+        <button id="learn-more-btn">Learn More</button>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <p class="about-description">I am a financial engineering enthusiast with a focus on 
+                banking, economics, financial products development, quantitative finance, and risk management.
+                 I specialize in data science, machine-learning/deep-learning, and financial modeling, with 
+                 a passion for creating innovative solutions within the financial sectors of Malaysia 
+                 and the Middle East.</p>
+            <div class="about-skills">
+                <h3>Skills & Expertise</h3>
+                <ul>
+                    <li>Financial Engineering & Risk Modeling</li>
+                    <li>Python for Data Science (scikit-learn, XGBoost, PyTorch)</li>
+                    <li>Database Management (PostgreSQL)</li>
+                    <li>Big Data Management (PySpark)</li>
+                    <li>Financial Modeling (Excel)</li>
+                    <li>Web Development (HTML, CSS, JavaScript)</li>
+                    <li>Natural Language Processing (spaCy)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Projects Section -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+        <div class="project-card" id="portfolio-opt">
+            <h3>Portfolio Optimizing Website</h3>
+            <p>Implemented a portfolio optimizing website that optimizes the weights
+                of the selected assets by maximizing the sharpe ratio or minimizing 
+                the variance. After the optimization process, the user reveives Monte
+                carlo simulation results alongside the optimized constraints in a plot called
+                the efficient frontier. The efficient frontier shows best and worst case scenarios.
+
+                
+            </p>
+            <button class="project-btn">View Project</button>
+        </div>
+        <div class="project-card" id="credit-risk">
+            <h3>Segmented Credit Profiles</h3>
+            <p>Implemented a credit risk model using K-Means clustering to label risk levels by using the random forest
+                classifer to receive the probability of default (PD) to label which clients are considered
+                risky, neutral, and non-risky.
+            </p>
+            <button class="project-btn">View Project</button>
+        
+        
+        </div>
+        
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out via email or LinkedIn!</p>
+        <button id="contact-btn"><a href="mailto:amyss1910@gmail.com">Get in Touch</a></button>
+        <button id="linkedin-btn">View LinkedIn Profile</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Ammar Yasser. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html
