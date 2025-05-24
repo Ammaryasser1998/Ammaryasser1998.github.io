@@ -1,6 +1,6 @@
 // Typing effect for the title
 const titleElement = document.getElementById('dynamic-title');
-const titleLines = ["Ammar Elhamamy", "Financial Engineering | Data Science"];
+const titleLines = ["Ammar Elhamamy", "Financial Engineering | AI/ML"];
 let lineIndex = 0;
 let charIndex = 0;
 
@@ -23,6 +23,32 @@ function typeEffect() {
 typeEffect();
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    const gridContainer = document.querySelector(".grid-container");
+
+
+// create 16 x 16 grid
+
+for (let i = 0; i < 256; i++){
+    const div = document.createElement('div');
+    div.classList.add('grid-box');
+    gridContainer.appendChild(div);
+
+
+
+//add hover effect
+div.addEventListener('mouseenter', () => {
+    div.style.backgroundColor = getNextColor(div); 
+        });
+    }
+});
+
+function getNextColor(element){
+    const colors = ["white", "green", "navy"];
+    const currentColor = element.style.backgroundColor;
+    const nextColor = colors[(colors.indexOf(currentColor)+ 1) % colors.length]
+    return nextColor
+}
 
 // Smooth scrolling
 document.querySelectorAll('nav ul li a').forEach(anchor => {
@@ -41,7 +67,9 @@ document.getElementById('credit-risk').querySelector('.project-btn').addEventLis
     window.open('https://github.com/Ammaryasser1998/risk_segment_kmeans/tree/main', '_blank');
 });
 
-
+document.getElementById('car-price').querySelector('.project-btn').addEventListener('click', function() {
+    window.open("")
+})
 
 
 
