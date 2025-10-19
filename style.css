@@ -273,8 +273,8 @@ button {
 }
 
 button:hover {
-    background-color: rgb(70, 177, 116);
-    color: rgb(253, 252, 252);
+    background-color: white;
+    color: black;
 }
 
 a:link{
