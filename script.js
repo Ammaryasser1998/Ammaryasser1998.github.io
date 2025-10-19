@@ -67,9 +67,7 @@ document.getElementById('credit-risk').querySelector('.project-btn').addEventLis
     window.open('https://github.com/Ammaryasser1998/risk_segment_kmeans/tree/main', '_blank');
 });
 
-document.getElementById('car-price').querySelector('.project-btn').addEventListener('click', function() {
-    window.open("")
-})
+
 
 
 
