@@ -288,8 +288,7 @@ a:link{
 
 /* Project Cards */
 .project-card {
-    background: conic-gradient(from 135deg, rgba(5, 5, 10, 1.000) 0.000deg, rgba(5, 5, 10, 1.000) 120.000deg, rgba(30, 31, 34, 1.000) 120.000deg, rgba(30, 31, 34, 1.000) 240.000deg, rgba(48, 49, 53, 1.000) 240.000deg 360.000deg);
-    width: 80%;
+    background: black;
     max-width: 400px;
     border-radius: 15%;
     transition: transform 0.3s ease;
