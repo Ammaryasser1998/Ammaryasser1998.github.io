@@ -293,6 +293,7 @@ a:link{
     max-width: 400px;
     border-radius: 15%;
     transition: transform 0.3s ease;
+    font-weight: bolder;
 }
 
 .project-card:hover {
